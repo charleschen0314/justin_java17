@@ -1,0 +1,27 @@
+package justin.java17.samples.CH04.ClassObject.src.cc.openhome;
+
+public class IntegerDemo {
+    public static void main(String[] args) {
+        int data1 = 10;
+        int data2 = 20;
+        
+        var wrapper1 = Integer.valueOf(data1);
+        var wrapper2 = Integer.valueOf(data2);
+        
+        System.out.println(data1 / 3);
+        System.out.println(wrapper1.doubleValue() / 3);
+        System.out.println(wrapper1.compareTo(wrapper2));
+
+        Integer i1 = 200;
+        Integer i2 = 200;
+
+        if(i1.equals(i2)){
+            System.out.println("i1.equals(i2)");
+        }
+
+        if(i1 == i2){
+            System.out.println("i1 == i2");
+        }
+
+    }
+}

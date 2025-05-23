@@ -1,0 +1,17 @@
+package justin.java17.labs.CH07.OceanWorld1.src.cc.openhome;
+
+public abstract class Fish implements Swimmer{
+
+    protected String name;
+
+    public Fish(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public abstract void swim();
+}
