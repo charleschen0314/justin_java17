@@ -17,5 +17,16 @@ public class MapKeyValue {
         out.println("顯示值");
         // values()傳回Collection
         map.values().forEach(key -> out.println(key));
+
+        Set<String> keys = map.keySet();
+        for (String key : keys) {
+            String value = map.get(key);
+            System.out.println(key+"====>"+value);
+        }
+        System.out.println("===========");
+        Set<Map.Entry<String, String>> entries = map.entrySet();
+        for (Map.Entry<String, String> entry : entries) {
+            System.out.println(entry.getKey()+"===>"+entry.getValue());
+        }
     }
 }

@@ -1,0 +1,20 @@
+package justin.java17.samples.CH11.Thread.src.cc.openhome;
+
+public class Producer implements Runnable {
+    private Clerk clerk; 
+    
+    public Producer(Clerk clerk) { 
+        this.clerk = clerk; 
+    } 
+    
+    public void run() { 
+        System.out.println("生產者開始生產整數......"); 
+        for(var product = 1; product <= 10; product++) { 
+            try { 
+                clerk.setProduct(product);
+            } catch (InterruptedException ex) {
+                throw new RuntimeException(ex);
+            }
+        }       
+    } 
+}

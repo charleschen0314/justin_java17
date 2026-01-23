@@ -12,6 +12,7 @@ public class Exercise2 {
 
     private static boolean isReversedWord(String word) {
         var characterDeque = toDeque(word.toCharArray());
+        System.out.println(characterDeque);
         Character c1, c2;
         while((c1 = characterDeque.pollFirst()) != null && (c2 = characterDeque.pollLast()) != null) {
             if(!c1.equals(c2)) {

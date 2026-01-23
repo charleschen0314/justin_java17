@@ -7,7 +7,17 @@ public class ForEach {
         var names = Arrays.asList("Justin", "Monica", "Irene");
         forEach(names);
         forEach(new HashSet(names)); 
-        forEach(new ArrayDeque(names)); 
+        forEach(new ArrayDeque(names));
+
+        System.out.println("==");
+        names.forEach(name -> System.out.println(name));
+        new HashSet(names).forEach(name -> System.out.println(name));
+        new ArrayDeque(names).forEach(name -> System.out.println(name));
+
+        System.out.println("==");
+        names.forEach(System.out::println);
+        new HashSet(names).forEach(System.out::println);
+        new ArrayDeque(names).forEach(System.out::println);
     }
 
     static void forEach(Iterable iterable) {

@@ -7,7 +7,7 @@ public class Sort4 {
     public static void main(String[] args) {
         var words = Arrays.asList(
                 "B", "X", "A", "M", null ,"F", "W", "O", null);
-        words.sort(nullsFirst(reverseOrder()));
+        words.sort(Comparator.nullsFirst(Comparator.reverseOrder()));
         System.out.println(words);
     }
 }

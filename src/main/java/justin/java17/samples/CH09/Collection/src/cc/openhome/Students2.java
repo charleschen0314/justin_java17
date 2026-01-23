@@ -22,7 +22,7 @@ class Student2 {
 
   @Override
   public String toString() {
-    return "(%s, %s)".formatted(name, number);
+      return "(%s, %s)".formatted(name, number);
   }
 
   // Eclipse自動產生的equals()與hashCode()
