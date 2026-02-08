@@ -1,4 +1,4 @@
-package com.charles;
+package charles;
 
 public class StringUtilsH extends org.apache.commons.lang3.StringUtils {
 	

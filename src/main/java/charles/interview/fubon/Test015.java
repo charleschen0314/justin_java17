@@ -1,4 +1,4 @@
-package com.charles.interview.fubon;
+package charles.interview.fubon;
 
 class Base{
 	static abstract void doIt();

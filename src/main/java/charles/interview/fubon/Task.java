@@ -1,4 +1,4 @@
-package com.charles.interview.fubon;
+package charles.interview.fubon;
 
 public class Task {
 	String title;

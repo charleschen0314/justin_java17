@@ -1,4 +1,4 @@
-package com.charles.calendar;
+package charles.calendar;
 
 import java.util.Calendar;
 import java.util.Date;

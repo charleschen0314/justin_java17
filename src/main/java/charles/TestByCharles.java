@@ -1,4 +1,4 @@
-package com.charles;
+package charles;
 
 import java.math.BigDecimal;
 

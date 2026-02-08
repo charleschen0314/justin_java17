@@ -1,4 +1,4 @@
-package com.charles.interview.fubon;
+package charles.interview.fubon;
 
 class A {
 	int a = 5;

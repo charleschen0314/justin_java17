@@ -1,4 +1,4 @@
-package com.charles.calendar;
+package charles.calendar;
 
 import java.io.IOException;
 import java.nio.file.*;
